@@ -7,8 +7,8 @@ public class PessoaEntity {
     protected String nomeCompleto;
     private Date dataNascimento;
     private Integer matricula;
-
-    public void Pessoa(String nome, Date data, Integer matricula) {
+ 
+    public PessoaEntity(String nome, Date data, Integer matricula) {
         this.nomeCompleto = nome;
         this.dataNascimento = data;
         this.matricula = matricula;
