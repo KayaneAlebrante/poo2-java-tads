@@ -14,23 +14,35 @@ public class PessoaEntity {
         this.matricula = matricula;
     }
 
-    public void exibirDados() {
-        System.out.println("ID: " + idPessoa);
-        System.out.println("Nome: " + nomeCompleto);
-        System.out.println("Data de Nascimento: " + dataNascimento);
-        System.out.println("Matrícula: " + matricula);
+    public Long getId() {
+        return idPessoa;
     }
 
-    public void cadastrarDados(String nome, Date dataNascimento, Integer matricula) {
-        this.nomeCompleto = nome;
-        this.dataNascimento = dataNascimento;
-        this.matricula = matricula;
+    public void setId(Long idPessoa) {
+        this.idPessoa = idPessoa;
     }
 
-    public void editarDados(String nome, Date dataNascimento, Integer matricula) {
-        this.nomeCompleto = nome;
-        this.dataNascimento = dataNascimento;
-        this.matricula = matricula;
+    public String getNome() {
+        return nomeCompleto;
     }
-    
+
+    public void setNome(String nome) {
+        this.nomeCompleto = nome;
+    }
+
+    public Date getData() {
+        return dataNascimento;
+    }
+
+    public void setData(Date data) {
+        this.dataNascimento = data;
+    }
+
+    public Integer getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(Integer matricula) {
+        this.matricula = matricula;
+    }   
 }
