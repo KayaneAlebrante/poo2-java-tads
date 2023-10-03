@@ -9,7 +9,7 @@ public class AlunoEntity extends PessoaEntity{
     private Integer turma;
 
     public AlunoEntity(String nome, Date data, Integer matricula, String email, Integer turma) {
-        super();
+        super(nome, data, matricula);
         this.email = email;
         this.turma = turma;
     }
@@ -24,7 +24,7 @@ public class AlunoEntity extends PessoaEntity{
     @Override
     public void cadastrarDados(String nome, Date dataNascimento, Integer matricula) {
         super.cadastrarDados(nome, dataNascimento, matricula);
-        this.email = ""; /
+        this.email = "";
         this.turma = 0; 
     }
 
