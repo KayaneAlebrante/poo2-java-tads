@@ -13,4 +13,20 @@ public class AlunoEntity extends PessoaEntity{
         this.email = email;
         this.turma = turma;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Integer getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Integer turma) {
+        this.turma = turma;
+    }
 }
